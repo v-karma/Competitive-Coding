@@ -11,8 +11,18 @@ int main() {
     int sum;
     sum = n/10000;
     int a = sum;
-    printf("%d\n",a);
     sum = n/1000;
-    printf("%d",sum);
+    sum = sum%10;
+    int b= sum;
+    sum = n/100;
+    sum = sum%10;
+    int c= sum;
+    sum = n/10;
+    sum = sum%10;
+    int d = sum;
+    sum = n;
+    sum = n%10;
+    int e= sum;
+    printf("%d",sum=a+b+c+d+e);
     return 0;
 }
