@@ -3,14 +3,31 @@
 #include <math.h>
 #include <stdlib.h>
 
-
-
-//Complete the following function.
-
 int marks_summation(int* marks, int number_of_students, char gender) {
-  //Write your code here.
-}
-
+  int i;
+  int sum= 0;
+  if(gender == 'b'){
+      for (i=0;i<number_of_students; i++){
+        if(i%2 == 0){
+            sum = sum + marks[i];
+        }
+        else {
+          sum =sum;
+      }
+    }
+  }
+    if(gender == 'g'){
+      for (i=0;i<number_of_students; i++){
+        if(i%2 == 0){
+            sum = sum;
+        }
+        else {
+          sum = sum+ marks[i];
+      }
+    }
+    }
+    return sum;
+}    
 int main() {
     int number_of_students;
     char gender;
