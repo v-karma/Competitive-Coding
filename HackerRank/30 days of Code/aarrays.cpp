@@ -4,16 +4,27 @@
 #include <iostream>
 #include <algorithm>
 #include<string>
+#include <string.h>
+#include<cstring>
 using namespace std;
 
 
 int main() {
-    int n{};
-    cin>>n;
-    char num[n];
-    for (int i=0;i<sizeof(num);i++){
-        getline(cin,&num[i]);
+    int testcase{};
+    cin>>testcase;
+    for(int i=0;i<testcase;i++){
+        string var{};
+        cin>>var;
+        string evenchar{}, oddchar{};
+        for(int j=0;j<var.length();j++){
+            if(j%2==0){
+                evenchar+=var[j];
+            }else{
+                oddchar+=var[j];
+            }
+        }
+    cout<<evenchar<<" "<<oddchar<<endl;
     }
-    cout<<num;
+
     return 0;
 }
