@@ -22,6 +22,7 @@ int main() {
             if(arr[i][0] < l || arr[i][1] <l){
                 printf("UPLOAD ANOTHER\n");
                 break;
+                }
             }else if( arr[i][0]>l || arr[i][1]>l){
                 if(arr[i][0]==arr[i][1]){
                     printf("ACCEPTED\n");
